@@ -10,7 +10,7 @@ Page({
     commentLoaded: false,
     detail: {},
     imageUrls: [],
-    collected: false,
+    //collected: false,
     inputBoxShow: true,
     maxContentLength: 300,
     comment: '',
@@ -83,8 +83,8 @@ Page({
       success: function (res) {
         var postdetail = res.result.postdetail.data[0];
         postdetail.publish_time = util.formatTime(new Date(postdetail.publish_time))
-        //
-
+        /*
+        //收藏start
         //拟实现收藏功能：未解决异步产生的获取openid延迟问题,改用gobalopenid
         if (postdetail.collecter.length == 0) {
           //console.log('0123')
@@ -98,10 +98,10 @@ Page({
             that.setData({
               collected: true
             })
-
           }
-
         }
+        //收藏end
+        */
 
         that.setData({
           detail: postdetail,

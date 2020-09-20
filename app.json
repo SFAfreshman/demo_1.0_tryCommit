@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/postlist/postlist",
+    "pages/publish/publish",
+    "pages/postdetail/postdetail",
+    "pages/authorize/authorize"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "莞工尔雅论坛",
+    "navigationBarTextStyle": "white"
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}
